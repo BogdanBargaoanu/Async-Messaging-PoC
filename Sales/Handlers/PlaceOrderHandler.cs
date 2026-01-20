@@ -11,7 +11,7 @@ namespace Sales.Handlers
             logger.LogInformation("Received PlaceOrder, OrderId = {orderId}", message.OrderId);
 
             // Business logic
-            Thread.Sleep(200);
+            Thread.Sleep(100);
 
             var orderPlaced = new OrderPlaced
             {

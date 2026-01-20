@@ -4,4 +4,5 @@
   <Project Path="ClientUI/ClientUI.csproj" Id="96ac2380-32d8-4736-bc37-1fab7bdc946e" />
   <Project Path="Messages/Sales.Messages.csproj" Id="6709727f-1c6d-4bc5-abea-20a30e749646" />
   <Project Path="Sales/Sales.csproj" Id="471d67ad-c3a8-42f8-a1ef-73fa59aa336a" />
+  <Project Path="Shipping/Shipping.csproj" Id="6ca2cae4-9501-486a-82b4-45196d9a66bb" />
 </Solution>
