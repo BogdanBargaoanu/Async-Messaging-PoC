@@ -5,6 +5,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{96AC2380-32D8-4736-BC37-1FAB7BDC946E}|ClientUI\\ClientUI.csproj|c:\\onboarding\\async-messaging-poc\\clientui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96AC2380-32D8-4736-BC37-1FAB7BDC946E}|ClientUI\\ClientUI.csproj|solutionrelative:clientui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96AC2380-32D8-4736-BC37-1FAB7BDC946E}|ClientUI\\ClientUI.csproj|c:\\onboarding\\async-messaging-poc\\clientui\\inputloopservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96AC2380-32D8-4736-BC37-1FAB7BDC946E}|ClientUI\\ClientUI.csproj|solutionrelative:clientui\\inputloopservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96AC2380-32D8-4736-BC37-1FAB7BDC946E}|ClientUI\\ClientUI.csproj|c:\\onboarding\\async-messaging-poc\\clientui\\handlers\\placeorderhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96AC2380-32D8-4736-BC37-1FAB7BDC946E}|ClientUI\\ClientUI.csproj|solutionrelative:clientui\\handlers\\placeorderhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6709727F-1C6D-4BC5-ABEA-20A30E749646}|Messages\\Messages.csproj|c:\\onboarding\\async-messaging-poc\\messages\\commands\\placeorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6709727F-1C6D-4BC5-ABEA-20A30E749646}|Messages\\Messages.csproj|solutionrelative:messages\\commands\\placeorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InputLoopService.cs",
+              "DocumentMoniker": "C:\\Onboarding\\Async-Messaging-PoC\\ClientUI\\InputLoopService.cs",
+              "RelativeDocumentMoniker": "ClientUI\\InputLoopService.cs",
+              "ToolTip": "C:\\Onboarding\\Async-Messaging-PoC\\ClientUI\\InputLoopService.cs",
+              "RelativeToolTip": "ClientUI\\InputLoopService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T09:41:15.229Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,9 +49,35 @@
               "RelativeDocumentMoniker": "ClientUI\\Program.cs",
               "ToolTip": "C:\\Onboarding\\Async-Messaging-PoC\\ClientUI\\Program.cs",
               "RelativeToolTip": "ClientUI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-20T07:49:45.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlaceOrderHandler.cs",
+              "DocumentMoniker": "C:\\Onboarding\\Async-Messaging-PoC\\ClientUI\\Handlers\\PlaceOrderHandler.cs",
+              "RelativeDocumentMoniker": "ClientUI\\Handlers\\PlaceOrderHandler.cs",
+              "ToolTip": "C:\\Onboarding\\Async-Messaging-PoC\\ClientUI\\Handlers\\PlaceOrderHandler.cs",
+              "RelativeToolTip": "ClientUI\\Handlers\\PlaceOrderHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T09:36:10.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlaceOrder.cs",
+              "DocumentMoniker": "C:\\Onboarding\\Async-Messaging-PoC\\Messages\\Commands\\PlaceOrder.cs",
+              "RelativeDocumentMoniker": "Messages\\Commands\\PlaceOrder.cs",
+              "ToolTip": "C:\\Onboarding\\Async-Messaging-PoC\\Messages\\Commands\\PlaceOrder.cs",
+              "RelativeToolTip": "Messages\\Commands\\PlaceOrder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T09:34:11.201Z",
               "EditorCaption": ""
             }
           ]

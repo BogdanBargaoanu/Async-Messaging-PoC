@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Hosting;
+﻿using ClientUI;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
 Console.Title = "ClientUI";
 
@@ -15,11 +17,12 @@ if (!Directory.Exists(storageDirectory))
 {
     Directory.CreateDirectory(storageDirectory);
 }
-;
 
 var transport = endpointConfiguration.UseTransport(new LearningTransport());
 
 builder.UseNServiceBus(endpointConfiguration);
+
+builder.Services.AddHostedService<InputLoopService>();
 
 var app = builder.Build();
 
