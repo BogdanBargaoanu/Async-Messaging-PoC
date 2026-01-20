@@ -13,6 +13,13 @@ namespace Sales.Handlers
             // Business logic
             Thread.Sleep(100);
 
+            var random = new Random().Next();
+            if (random > 0.7 * int.MaxValue)
+            {
+                logger.LogError("Failed to place order, OrderId = {orderId}", message.OrderId);
+                throw new Exception("Random failure occurred while placing order.");
+            }
+
             var orderPlaced = new OrderPlaced
             {
                 OrderId = message.OrderId
