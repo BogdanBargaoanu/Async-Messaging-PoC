@@ -2,11 +2,12 @@
 using Microsoft.Extensions.Logging;
 using Sales.Messages.Events;
 
-namespace Shipping.Policies
+namespace Shipping.Policies.Shipping
 {
     public class ShippingPolicy(ILogger<ShippingPolicy> logger) : Saga<SagaData>,
         IAmStartedByMessages<OrderPlaced>,
-        IAmStartedByMessages<OrderBilled>
+        IAmStartedByMessages<OrderBilled>,
+        IHandleTimeouts<OrderNotBilledTimeout>
     {
         protected override void ConfigureHowToFindSaga(SagaPropertyMapper<SagaData> mapper)
         {
@@ -21,6 +22,11 @@ namespace Shipping.Policies
             logger.LogInformation("Received OrderPlaced, OrderId = {orderId} - Status: {placed}, {billed}", message.OrderId, this.Data.Placed, this.Data.Billed);
 
             await ProcessOrder(context);
+
+            if (!Data.Billed)
+            {
+                await this.RequestTimeout<OrderNotBilledTimeout>(context, TimeSpan.FromSeconds(5));
+            }
         }
 
         public async Task Handle(OrderBilled message, IMessageHandlerContext context)
@@ -39,12 +45,10 @@ namespace Shipping.Policies
                 MarkAsComplete();
             }
         }
-    }
 
-    public class SagaData : ContainSagaData
-    {
-        public string OrderId { get; set; }
-        public bool Placed { get; set; }
-        public bool Billed { get; set; }
+        public async Task Timeout(OrderNotBilledTimeout state, IMessageHandlerContext context)
+        {
+            logger.LogInformation("Order not billed, OrderId = {orderId}", this.Data.OrderId);
+        }
     }
 }
