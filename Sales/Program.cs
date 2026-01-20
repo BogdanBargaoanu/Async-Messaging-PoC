@@ -18,7 +18,7 @@ var endpointConfiguration = new EndpointConfiguration("Sales");
 
 endpointConfiguration.UseSerialization<SystemJsonSerializer>();
 
-endpointConfiguration.UseTransport(new LearningTransport());
+endpointConfiguration.UseTransport<LearningTransport>();
 
 builder.UseNServiceBus(endpointConfiguration);
 

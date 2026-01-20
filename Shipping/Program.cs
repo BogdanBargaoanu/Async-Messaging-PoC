@@ -17,7 +17,9 @@ var endpointConfiguration = new EndpointConfiguration("Shipping");
 
 endpointConfiguration.UseSerialization<SystemJsonSerializer>();
 
-endpointConfiguration.UseTransport(new LearningTransport());
+endpointConfiguration.UseTransport<LearningTransport>();
+
+endpointConfiguration.UsePersistence<LearningPersistence>();
 
 builder.UseNServiceBus(endpointConfiguration);
 

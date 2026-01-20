@@ -3,7 +3,8 @@ using Microsoft.Extensions.Logging;
 
 namespace Shipping.Handlers
 {
-    public class OrderBilledHandler(ILogger<OrderBilledHandler> logger) : IHandleMessages<OrderBilled>
+    public class OrderBilledHandler(ILogger<OrderBilledHandler> logger)
+    //: IHandleMessages<OrderBilled>
     {
         public async Task Handle(OrderBilled message, IMessageHandlerContext context)
         {
