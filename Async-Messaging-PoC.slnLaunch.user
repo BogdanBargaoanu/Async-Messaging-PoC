@@ -1,0 +1,23 @@
+[
+  {
+    "Name": "Development",
+    "Projects": [
+      {
+        "Path": "ClientUI\\ClientUI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Sales\\Sales.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Billing\\Billing.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Shipping\\Shipping.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
