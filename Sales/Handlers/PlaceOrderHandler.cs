@@ -1,7 +1,7 @@
-﻿using Messages.Commands;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Logging;
+using Sales.Messages.Commands;
 
-namespace ClientUI.Handlers
+namespace Sales.Handlers
 {
     public class PlaceOrderHandler(ILogger<PlaceOrderHandler> logger) : IHandleMessages<PlaceOrder>
     {

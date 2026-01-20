@@ -1,5 +1,5 @@
-﻿using Messages.Commands;
-using Microsoft.Extensions.Hosting;
+﻿using Microsoft.Extensions.Hosting;
+using Sales.Messages.Commands;
 
 namespace ClientUI
 {
@@ -24,7 +24,7 @@ namespace ClientUI
 
                         // Send the command
                         Console.WriteLine($"PlaceOrder sent, OrderId = {command.OrderId}");
-                        await messageSession.SendLocal(command, stoppingToken);
+                        await messageSession.Send(command, stoppingToken);
                         break;
                     case ConsoleKey.Q:
                         return;
